@@ -1,0 +1,65 @@
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  margin-bottom: 10px;
+
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+.feature__text {
+  font-weight: 400;
+  line-height: 1.71;
+}
+.feature__list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.feature__item {
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+    margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.feature__item::before {
+  display: block;
+  content: '';
+  height: 120px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--bg-icon-feature);
+  margin-bottom: 30px;
+}
+.feature__item:nth-child(1)::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+.feature__item:nth-child(2)::before {
+  background-image: url(../images/icons/clock.svg);
+}
+.feature__item:nth-child(3)::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+.feature__item:nth-child(4)::before {
+  background-image: url(../images/icons/astronaut.svg);
+}

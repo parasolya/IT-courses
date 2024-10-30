@@ -1,0 +1,40 @@
+.contact {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  color: var(--primary-text-color);
+
+  transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact__icon {
+  fill: currentColor;
+}

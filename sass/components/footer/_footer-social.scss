@@ -1,0 +1,32 @@
+.footer-social {
+  @media screen and (min-width: 768px) {
+    // margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-icon-footer);
+  color: var(--white-color);
+
+  transition: background-color var(--anim-fast), color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: var(--white-color);
+  }
+}
+
+.footer-social__icon {
+  fill: currentColor;
+}
