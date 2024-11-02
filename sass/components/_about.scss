@@ -1,0 +1,20 @@
+.about__description {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.54;
+  letter-spacing: 0.06em;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    padding: 0 120px;
+  }
+}

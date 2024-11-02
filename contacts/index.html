@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT сourses</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__box">
+        <a class="logo header__item" href="../"
+          >IT<span class="logo--black">Cours</span></a
+        >
+
+        <nav class="nav header__item">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a href="../" class="nav__link link">Acasă</a>
+            </li>
+            <li class="nav__item">
+              <a href="../courses" class="nav__link link">Cursurile Noastre</a>
+            </li>
+            <li class="nav__item">
+              <a href="./" class="nav__link link nav__link--current">Contacte</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Зворотній зв'язок -->
+        <ul class="contact header__item list">
+          <li class="contact__item">
+            <a href="mailto:it.cours@gmail.com" class="contact__link link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="../images/icons.svg#icon-envelope"></use>
+              </svg>
+              it.cours@gmail.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="../images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +40 712 345 678</a
+            >
+          </li>
+        </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="../images/icons.svg#icon-open_mobmenu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title title--color">Cursurile Noastre</h1>
+          <div class="contactUs__wrapper">
+            <div class="contactUs__imgBox">
+              <img class="contactUs__img" src="../images/contactUs/contact.jpg" alt="Contacte" />
+            </div>
+            <ul class="contactUs__List header__item list">
+              <li class="contact__item">
+                <a href="mailto:it.cours@gmail.com" class="contact__link contactUs__link link">
+                  <div class="contactUs__Icon">
+                  <svg width="31" height="28" fill="#2196f3">
+                    <use href="../../images/icons.svg#icon-envelope"></use>
+                  </svg>
+                </div>
+                  it.cours@gmail.com
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="tel:+380961111111" class="contact__link contactUs__link link">
+                  <div class="contactUs__Icon">
+                  <svg width="20" height="32" fill="#2196f3">
+                    <use href="../../images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                </div>
+                  +40 712 345 678</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="formWrapper">
+            <p class="modal__title">Lasă-ți datele, te vom contacta.</p>
+            <form class="form form--distance" name="form">
+              <label class="form__label" for="user-name">Nume</label>
+              <div class="form__wrapper">
+                <input class="form__field" type="text" name="user-name" id="user-name" />
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="../../images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+              <label class="form__label" for="user-phone">Telefon</label>
+              <div class="form__wrapper">
+                <input class="form__field" type="tel" name="user-phone" id="user-phone" />
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="../../images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <label class="form__label" for="user-mail">E-mail</label>
+              <div class="form__wrapper">
+                <input class="form__field" type="email" name="user-mai" id="user-mail" />
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="../../images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+              <label class="form__label" for="user-massage">Comentariu</label>
+              <textarea
+                class="form__massage"
+                name="user-massage"
+                id="user-massage"
+                placeholder="Introduceți textul"
+                rows="6"
+              ></textarea>
+
+              <button class="form__button button" type="submit">Trimite</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

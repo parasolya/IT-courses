@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT сourses</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__box">
+        <!--Логотип-->
+        <a class="logo header__item" href="../"
+          >IT<span class="logo--black">Cours</span></a
+        >
+        <!-- Навігація -->
+        <nav class="nav header__item">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a href="../" class="nav__link link">Acasă</a>
+            </li>
+            <li class="nav__item">
+              <a href="./" class="nav__link link nav__link--current"
+                >Cursurile Noastre</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="../contacts" class="nav__link link"
+                >Contacte</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Зворотній зв'язок -->
+        <ul class="contact header__item list">
+          <li class="contact__item">
+            <a href="mailto:it.cours@gmail.com" class="contact__link link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="../images/icons.svg#icon-envelope"></use>
+              </svg>
+              it.cours@gmail.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="../images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +40 712 345 678</a
+            >
+          </li>
+        </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="../images/icons.svg#icon-open_mobmenu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title title--color">Cursurile Noastre</h1>
+          <p class="hero__description">
+            Începeți-vă călătoria în IT cu cursurile noastre. Faceți primul pas astăzi și deschideți oportunitățile de câștig de mâine!
+          </p>
+
+          <ul class="list coursesPage">
+            <li class="coursesPage__item">
+              <div class="coursesPage__wrapper">
+                <div class="coursesPage__box">
+                  <div class="courses__imgBox">
+                    <img
+                      class="courses__img"
+                      src="../../images/courses/1cours.jpg"
+                      alt="Dezvoltator la computer"
+                      width="370"
+                      height="294"
+                      loading="lazy"
+                    />
+                    <p class="courses__label">Front-end developer</p>
+                  </div>
+                  <p class="courses__description">
+                    Un dezvoltator Frontend este responsabil pentru crearea unui aspect confortabil
+                    și estetic al paginii web pe diferite dispozitive, precum și pentru
+                    implementarea animațiilor și a altor soluții de interfață.
+                  </p>
+                </div>
+                <div class="card card--size">
+                  <div class="card__infoBox">
+                    <p class="card__info">5+ luni</p>
+                    <p class="card__price">3,203.90 RON</p>
+                  </div>
+                  <button data-modal-open type="button" class="button hero__button">
+                    Înscrie-te
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="coursesPage__item">
+              <div class="coursesPage__wrapper">
+                <div class="coursesPage__box">
+                  <div class="courses__imgBox">
+                    <img
+                      class="courses__img"
+                      src="../../images/courses/2cours.jpg"
+                      alt="Lucru cu aplicații mobile"
+                      width="370"
+                      height="294"
+                      loading="lazy"
+                    />
+                    <p class="courses__label">Dezvoltator Android</p>
+                  </div>
+                  <p class="courses__description">
+                    Un dezvoltator Android creează aplicații mobile optimizate pentru platforma
+                    Android, asigurând o experiență intuitivă pentru utilizatori, gestionarea
+                    eficientă a resurselor și integrarea cu diverse funcții ale dispozitivului.
+                  </p>
+                </div>
+
+                <div class="card card--size">
+                  <div class="card__infoBox">
+                    <p class="card__info">3+ luni</p>
+                    <p class="card__price">1,831.00 RON</p>
+                  </div>
+                  <button data-modal-open type="button" class="button hero__button">
+                    Înscrie-te
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="coursesPage__item">
+              <div class="coursesPage__wrapper">
+                <div class="coursesPage__box">
+                  <div class="courses__imgBox">
+                    <img
+                      class="courses__img"
+                      src="../../images/courses/3cours.jpg"
+                      alt="Design UX/UI de bază"
+                      width="370"
+                      height="294"
+                      loading="lazy"
+                    />
+                    <p class="courses__label">Design UX/UI de bază</p>
+                  </div>
+                  <p class="courses__description">
+                    Design UX/UI de bază implică crearea interfețelor intuitive și estetice pentru
+                    utilizatori, axându-se pe experiența acestora și asigurând o navigare eficientă
+                    și plăcută în cadrul aplicațiilor sau site-urilor web.
+                  </p>
+                </div>
+                <div class="card card--size">
+                  <div class="card__infoBox">
+                    <p class="card__info">5+ luni</p>
+                    <p class="card__price">2,288.50 RON</p>
+                  </div>
+                  <button data-modal-open type="button" class="button hero__button">
+                    Înscrie-te
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="coursesPage__item">
+              <div class="coursesPage__wrapper">
+                <div class="coursesPage__box">
+                  <div class="courses__imgBox">
+                    <img
+                      class="courses__img"
+                      src="../../images/courses/4cours.jpg"
+                      alt="Digital marketer"
+                      width="370"
+                      height="294"
+                      loading="lazy"
+                    />
+                    <p class="courses__label">Digital marketer</p>
+                  </div>
+                  <p class="courses__description">
+                    Digital marketer se concentrează pe promovarea produselor sau serviciilor prin
+                    canale digitale, optimizând campaniile de marketing și utilizând date pentru a
+                    atrage și implica publicul țintă.
+                  </p>
+                </div>
+                <div class="card card--size">
+                  <div class="card__infoBox">
+                    <p class="card__info">2+ luni</p>
+                    <p class="card__price">1,373.10 RON</p>
+                  </div>
+                  <button data-modal-open type="button" class="button hero__button">
+                    Înscrie-te
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="coursesPage__item">
+              <div class="coursesPage__wrapper">
+                <div class="coursesPage__box">
+                  <div class="courses__imgBox">
+                    <img
+                      class="courses__img"
+                      src="../../images/courses/5cours.jpg"
+                      alt="Full-stack developer"
+                      width="370"
+                      height="294"
+                      loading="lazy"
+                    />
+                    <p class="courses__label">Full-stack developer</p>
+                  </div>
+                  <p class="courses__description">
+                    Full-stack developers possess programming skills for both the front-end (client
+                    side) and back-end (server side). They can develop a complete product from start
+                    to finish.
+                  </p>
+                </div>
+                <div class="card card--size">
+                  <div class="card__infoBox">
+                    <p class="card__info">1+ lună</p>
+                    <p class="card__price">457.70 RON</p>
+                  </div>
+                  <button data-modal-open type="button" class="button hero__button">
+                    Înscrie-te
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="coursesPage__item">
+              <div class="coursesPage__wrapper">
+                <div class="coursesPage__box">
+                  <div class="courses__imgBox">
+                    <img
+                      class="courses__img"
+                      src="../../images/courses/6cours.jpg"
+                      alt="QA engineer"
+                      width="370"
+                      height="294"
+                      loading="lazy"
+                    />
+                    <p class="courses__label">QA engineer</p>
+                  </div>
+                  <p class="courses__description">
+                    Un inginer QA (Asigurarea Calității) se ocupă de testarea software-ului pentru a
+                    identifica erorile și problemele de funcționare, asigurându-se că produsul
+                    respectă standardele de calitate și performanță înainte de lansare.
+                  </p>
+                </div>
+                <div class="card card--size">
+                  <div class="card__infoBox">
+                    <p class="card__info">9+ luni</p>
+                    <p class="card__price">5,492.50 RON</p>
+                  </div>
+                  <button data-modal-open type="button" class="button hero__button">
+                    Înscrie-te
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__box">
+        <div class="footer__item">
+          <!--Логотип-->
+          <a class="logo logo--bottom" href="../"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="list">
+              <li class="address__item">
+                <a
+                  class="footer__link footer__link--white"
+                  href="https://goo.gl/maps/jK3vv2s47Ht4KwbE7"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="footer__link" href="mailto:it.cours@gmail.com">it.cours@gmail.com</a>
+              </li>
+              <li class="address__item">
+                <a class="footer__link" href="tel:+380961111111">+40 712 345 678</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Секція соціальних мереж -->
+        <div class="footer__item footer-social">
+          <h3 class="footer__title">приєднуйтесь</h3>
+          <ul class="social list">
+            <li>
+              <a
+                class="footer-social__link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="footer-social__icon" width="20" height="20">
+                  <use href="../images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-social__link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <svg class="footer-social__icon" width="20" height="20">
+                  <use href="../images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-social__link link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="footer-social__icon" width="20" height="20">
+                  <use href="../images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-social__link link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg class="footer-social__icon" width="20" height="20">
+                  <use href="../images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Підписка -->
+        <div class="footer__item subscription subscription--distance">
+          <h3 class="footer__title">Підпишіться на розсилку</h3>
+          <form class="subscription__form" name="footer-form">
+            <label for="footer-user-mail"></label>
+            <input
+              class="subscription__mail subscription__mail--distance"
+              type="email"
+              name="footer-user-mail"
+              id="footer-user-mail"
+              placeholder="E-mail"
+            />
+            <button
+              class="subscription__button button subscription__button--distance"
+              type="submit"
+            >
+              Підписатися
+              <svg class="subscription__icon" width="24" height="24">
+                <use href="../images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- Вікно мобільного меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="../images/icons.svg#icon-close_mobmenu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="mobile-menu__link link">Студія</a></li>
+        <li>
+          <a href="./coursesPage.html" class="mobile-menu__link link nav__link--current"
+            >Портфоліо</a
+          >
+        </li>
+        <li><a href="#" class="mobile-menu__link link">Контакти</a></li>
+      </ul>
+      <ul class="mobmenu-contact list">
+        <li>
+          <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+380961111111"
+            >+40 712 345 678
+          </a>
+        </li>
+        <li class="mobmenu-contact__item--distance">
+          <a class="mobmenu-contact__link link" href="mailto:it.cours@gmail.com"
+            >it.cours@gmail.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobmenu-social list">
+        <li class="mobmenu-social__item">
+          <a
+            class="mobmenu-social__link link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="mobmenu-social__item">
+          <a
+            class="mobmenu-social__link link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="mobmenu-social__item">
+          <a
+            class="mobmenu-social__link link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            Facebook
+          </a>
+        </li>
+        <li class="mobmenu-social__item">
+          <a
+            class="mobmenu-social__link link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal-window>
+        <button class="modal__button" data-modal-close>
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="../../images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Înregistrare la curs</p>
+        <form class="form form--distance" name="form">
+          <label class="form__label" for="user-name">Nume</label>
+          <div class="form__wrapper">
+            <input class="form__field" type="text" name="user-name" id="user-name" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="../../images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="form__label" for="user-phone">Telefon</label>
+          <div class="form__wrapper">
+            <input class="form__field" type="tel" name="user-phone" id="user-phone" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="../../images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="form__label" for="user-mail">E-mail</label>
+          <div class="form__wrapper">
+            <input class="form__field" type="email" name="user-mai" id="user-mail" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="../../images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="form__label" for="user-massage">Comentariu</label>
+          <textarea
+            class="form__massage"
+            name="user-massage"
+            id="user-massage"
+            placeholder="Introduceți textul"
+            rows="6"
+          ></textarea>
+          
+          <button class="form__button button" type="submit">Înscrie-te</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../../js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

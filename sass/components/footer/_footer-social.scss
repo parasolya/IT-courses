@@ -1,11 +1,18 @@
 .footer-social {
-  @media screen and (min-width: 768px) {
-    // margin-left: 165px;
-  }
+  margin-left: 0;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .footer-social {
     margin-left: 70px;
   }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer-social__link {
@@ -17,11 +24,9 @@
   border-radius: 50%;
   background-color: var(--bg-icon-footer);
   color: var(--white-color);
+  transition: background-color var(--anim-fast);
 
-  transition: background-color var(--anim-fast), color var(--anim-fast);
-
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #2196f3;
     color: var(--white-color);
   }

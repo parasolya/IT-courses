@@ -1,0 +1,80 @@
+.contactUs__imgBox {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .contactUs__imgBox {
+    width: 400px;
+  }
+}
+
+.contactUs__wrapper {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .contactUs__wrapper {    
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contactUs__List {
+  margin-left: auto;
+  width: 40%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactUs__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: var(--bg-icon-feature);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform var(--anim-fast), opacity var(--anim-fast);
+
+  @media screen and (max-width: 1199px) {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.contactUs__Icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactUs__link {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 24px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-hover-color); 
+  }
+}

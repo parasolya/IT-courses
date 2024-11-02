@@ -1,0 +1,17 @@
+{
+  "name": "it-courses",
+  "version": "1.0.0",
+  "description": "it-courses",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-css & live-server",
+    "build-css": "sass sass/main.scss css/main.min.css --style compressed --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.80.5"
+  }
+}

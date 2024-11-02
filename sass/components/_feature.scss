@@ -1,3 +1,7 @@
+.feature{
+padding-top: 0;
+}
+
 .feature__title {
   font-weight: 700;
   font-size: 14px;
@@ -52,14 +56,14 @@
   margin-bottom: 30px;
 }
 .feature__item:nth-child(1)::before {
-  background-image: url(../images/icons/antenna.svg);
+  background-image: url(../images/icons/online-learning.svg);
 }
 .feature__item:nth-child(2)::before {
-  background-image: url(../images/icons/clock.svg);
+  background-image: url(../images/icons/notes.svg);
 }
 .feature__item:nth-child(3)::before {
-  background-image: url(../images/icons/diagram.svg);
+  background-image: url(../images/icons/choices.svg);
 }
 .feature__item:nth-child(4)::before {
-  background-image: url(../images/icons/astronaut.svg);
+  background-image: url(../images/icons/technical-support.svg);
 }
