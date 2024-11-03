@@ -22,11 +22,18 @@
 
 .contactUs__List {
   margin-left: auto;
-  width: 40%;
+  margin-top: 20px;
   display: flex;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .contactUs__List {    
+   width: 40%;
+   margin-top: 0;
+  }
 }
 
 .contactUs__img {
@@ -36,6 +43,7 @@
 }
 
 .formWrapper {
+  overflow: scroll;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -52,7 +60,6 @@
     max-width: 450px;
     height: 95%;
     max-height: 609px;
-    overflow: scroll;
   }
 
   @media screen and (min-width: 1200px) {

@@ -324,51 +324,6 @@
   </footer>
 
 
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal" data-modal-window>
-      <button class="modal__button" data-modal-close>
-        <svg class="modal__icon" width="18px" height="18px">
-          <use href="./images/icons.svg#icon-close-black"></use>
-        </svg>
-      </button>
-      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-      <form class="form form--distance" name="form">
-        <label class="form__label" for="user-name">Nume</label>
-        <div class="form__wrapper">
-          <input class="form__field" type="text" name="user-name" id="user-name" />
-          <svg class="form__icon" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </div>
-        <label class="form__label" for="user-phone">Telefon</label>
-        <div class="form__wrapper">
-          <input class="form__field" type="tel" name="user-phone" id="user-phone" />
-          <svg class="form__icon" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
-        </div>
-        <label class="form__label" for="user-mail">E-mail</label>
-        <div class="form__wrapper">
-          <input class="form__field" type="email" name="user-mai" id="user-mail" />
-          <svg class="form__icon" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-        </div>
-        <label class="form__label" for="user-massage">Comentariu</label>
-        <textarea class="form__massage" name="user-massage" id="user-massage" placeholder="Introduceți textul"
-          rows="6"></textarea>
-        <div class="checkbox">
-          <input class="checkbox__field" type="checkbox" id="user-agreement" />
-
-          <label for="user-agreement">Погоджуюся з розсилкою та приймаю
-            <a class="checkbox__link" href="">Умови договору</a>
-          </label>
-        </div>
-        <button class="form__button button" type="submit">Trimite</button>
-      </form>
-    </div>
-  </div>
-  <!-- Вікно мобільного меню -->
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
       <svg class="menu-toggle__icon" width="40" height="40">
@@ -376,10 +331,10 @@
       </svg>
     </button>
 
-    <ul class="mobile-menu list">
-      <li><a href="./index.html" class="mobile-menu__link link nav__link--current">Студія</a></li>
-      <li><a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a></li>
-      <li><a href="#" class="mobile-menu__link link">Контакти</a></li>
+    <ul class="mobile-menu list"> 
+      <li><a href="./" class="mobile-menu__link link nav__link--current">Acasă</a></li>
+      <li><a href="courses" class="mobile-menu__link link">Cursurile Noastre</a></li>
+      <li><a href="contacts" class="mobile-menu__link link">Contacte</a></li>
     </ul>
     <ul class="mobmenu-contact list">
       <li>
@@ -419,12 +374,14 @@
     </ul>
   </div>
 
+  <script defer src="./js/mobile-menu.js"></script>
+
   <script src="./js/modal.js"></script>
 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script>
+  
 </body>
 
 </html>

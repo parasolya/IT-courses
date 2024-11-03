@@ -26,8 +26,7 @@
   fill: var(--black-color);
   transition: fill var(--anim-fast);
 
-  .menu-toggle:hover &,
-  .menu-toggle:focus & {
+  .menu-toggle:hover & {
     fill: var(--accent-color);
   }
 }
