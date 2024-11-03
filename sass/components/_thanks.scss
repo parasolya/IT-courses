@@ -1,0 +1,160 @@
+.thanks {
+  background-color: var(--background-color-hero);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.thanks__title {
+  color: var(--white-color);
+  
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin-top: 120px;
+  }
+}
+
+.thanks__description {
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.54;
+  letter-spacing: 0.06em;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    padding: 0 120px;
+  }
+}
+
+.thanks--overlay {
+  max-width: 1600px;
+  min-height: 400px;
+  padding: 100px 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(../images/thanks/img_s.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.6),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../images/thanks/img_s@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.6),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../images/thanks/img_m.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.6),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../images/thanks/img_m@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.6),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../images/thanks/img_l.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.6),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../images/thanks/img_l@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
+
+.thanks__imgBox {
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .thanks__imgBox {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thanks__imgBox {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.thanks__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thanks__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
