@@ -32,24 +32,8 @@
           </li>
         </ul>
       </nav>
-
-      <ul class="contact header__item list">
-        <li class="contact__item">
-          <a href="mailto:it.cours@gmail.com" class="contact__link link">
-            <svg class="contact__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            it.cours@gmail.com
-          </a>
-        </li>
-        <li class="contact__item">
-          <a href="tel:+380961111111" class="contact__link link">
-            <svg class="contact__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +40 712 345 678</a>
-        </li>
-      </ul>
+      <a href="courses" class="hero__button contact__btn link">Alege un curs</a>
+   
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-toggle__icon" width="40" height="40">
           <use href="./images/icons.svg#icon-open_mobmenu"></use>
@@ -61,7 +45,27 @@
     <section class="hero hero--overlay">
       <div class="container">
         <h1 class="hero__title">Cursuri IT: Drumul tău către o carieră de succes</h1>
-        <a href="courses" class="hero__button link">Alege un curs</a>
+        <div class="container successes__container">
+          <h2 class="visually-hidden">Succese</h2>
+          <ul class="list successes__list">
+            <li class="successes__item">
+              <p class="successes__digit">32+</p>
+              <p class="successes__description">Profesorii</p>
+            </li>
+            <li class="successes__item">
+              <p class="successes__digit">450+</p>
+              <p class="successes__description">Studenților</p>
+            </li>
+            <li class="successes__item">
+              <p class="successes__digit">12+</p>
+              <p class="successes__description">Cursurilor</p>
+            </li>
+            <li class="successes__item">
+              <p class="successes__digit">8+</p>
+              <p class="successes__description">Țărilor</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -115,49 +119,25 @@
         <h2 class="section__title title--color">Cursuri de dezvoltare</h2>
         <ul class="list courses__list">
           <li class="courses__item">
-            <div>
+            <div class="courses__imgBox">
               <img class="courses__img" src="./images/courses/1cours.jpg" alt="Dezvoltator la computer" width="370"
                 height="294" loading="lazy" />
               <p class="courses__label">Frontend apropiate</p>
             </div>
           </li>
           <li class="courses__item">
-            <div class="courses__img">
+            <div class="courses__imgBox">
               <img class="courses__img" src="./images/courses/2cours.jpg" alt="Lucru cu aplicații mobile" width="370"
                 height="294" loading="lazy" />
               <p class="courses__label">Dezvoltator Android</p>
             </div>
           </li>
           <li class="courses__item">
-            <div class="courses__img">
+            <div class="courses__imgBox">
               <img class="courses__img" src="./images/courses/3cours.jpg" alt="Munca unui designer grafic pe tabletă"
                 width="370" height="294" loading="lazy" />
               <p class="courses__label">Design UX/UI de bază</p>
             </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="successes">
-      <div class="container successes__container">
-        <h2 class="visually-hidden">Succese</h2>
-        <ul class="list successes__list">
-          <li class="successes__item">
-            <p class="successes__digit">32+</p>
-            <p class="successes__description">Profesorii</p>
-          </li>
-          <li class="successes__item">
-            <p class="successes__digit">450+</p>
-            <p class="successes__description">Studenților</p>
-          </li>
-          <li class="successes__item">
-            <p class="successes__digit">12+</p>
-            <p class="successes__description">Cursurilor</p>
-          </li>
-          <li class="successes__item">
-            <p class="successes__digit">8+</p>
-            <p class="successes__description">Țărilor</p>
           </li>
         </ul>
       </div>
@@ -168,70 +148,66 @@
         <h2 class="section__title title--color">Ce spun studenții noștri</h2>
         <ul class="list students__list">
           <li class="students__item">
-            <p class="student__feedback">
-              "Învățarea la Coe Way a fost o experiență transformațională pentru mine. Am învățat nu doar conceptele de
-              design, ci și cum să aplic aceste abilități în proiecte reale. Acum pot spune cu mândrie că am câștigat
-              rapid abilități care m-au ajutat să obțin un venit stabil online."
-            </p>
             <div class="member">
               <div class="students__imgBox">
-                <img class="students__img" src="./images/students/student-1.png" alt="Ana Ionescu" loading="lazy"
-                  width="72" height="72" />
-              </div>
-              <div class="member">
-                <h3 class="title--color member__title">Ana Ionescu</h3>
-                <p class="member__text">UX/UI Designer</p>
-              </div>
-          </li>
-          <li class="students__item">
-            <p class="student__feedback">
-              "Cursul de Dezvoltator Full Stack a fost pentru mine o oportunitate incredibilă de a învăța abilități
-              importante în dezvoltarea web. Am avut ocazia să aplic teoria în practică și acum pot lucra la proiecte
-              care îmi aduc profit rapid. Cunoștințele obținute m-au ajutat să găsesc un loc de muncă cu venituri
-              suplimentare și investiții online, care sunt foarte promițătoare."
-            </p>
-            <div class="member">
-              <div class="students__imgBox">
-                <img class="students__img" src="./images/students/student-2.png" alt="Andrei Marinescu" loading="lazy"
-                  width="72" height="72" />
-              </div>
-
-              <h3 class="title--color member__title">Andrei Marinescu</h3>
-              <p class="member__text">Full Stack Developer</p>
-            </div>
-          </li>
-          <li class="students__item">
-            <p class="student__feedback">
-              "Am fost foarte impresionată de cât de bine structurate erau lecțiile. Cursurile m-au ajutat să îmi
-              îmbunătățesc abilitățile tehnice și să devin un dezvoltator mai eficient. Datorită acestor cunoștințe, am
-              reușit să câștig bani extra prin proiecte freelance. În plus, am descoperit noi moduri de câștig care
-              mi-au asigurat un viitor financiar stabil."
-            </p>
-            <div class="member">
-              <div class="students__imgBox">
-                <img class="students__img" src="./images/students/student-3.png" alt="Maria Popescu" loading="lazy"
+                <img class="students__img" src="./images/students/student-3.jpg" alt="Maria Popescu" loading="lazy"
                   width="72" height="72" />
               </div>
 
               <h3 class="title--color member__title">Maria Popescu</h3>
               <p class="member__text">Frontend Developer</p>
             </div>
+            <p class="student__feedback">
+              "Foarte mulțumită că m-am înscris la cursuri. Acestea m-au ajutat să îmi îmbunătățesc abilitățile tehnice și să devin un dezvoltator mai eficient. Datorită acestor cunoștințe, am reușit să câștig bani suplimentari prin proiecte freelance. În plus, am descoperit noi modalități de a genera venituri, care mi-au asigurat un viitor financiar stabil."
+            </p>
+           
           </li>
           <li class="students__item">
-            <p class="student__feedback">
-              "Sunt foarte mulțumit de experiența pe care am avut-o la IT Cources. Am învățat să testez programele
-              eficient și să contribuie la îmbunătățirea produselor. Aceste abilități m-au ajutat să găsesc un loc de
-              muncă stabil. Cursul a fost un adevărat început pentru o carieră de succes"
-            </p>
             <div class="member">
               <div class="students__imgBox">
-                <img class="students__img" src="./images/students/student-4.png" alt="Cristian Vasile" loading="lazy"
+                <img class="students__img" src="./images/students/student-1.jpg" alt="Ana Ionescu" loading="lazy"
+                  width="72" height="72" />
+              </div>
+              <div class="member">
+                <h3 class="title--color member__title">Ana Ionescu</h3>
+                <p class="member__text">UX/UI Designer</p>
+              </div>
+            </div>
+            <p class="student__feedback">
+              "Studiiile la IT-courses au reprezentat o experiență care mi-a schimbat viața. Am învățat nu doar conceptele de design, ci și cum să aplic aceste competențe în proiecte reale. Acum pot afirma cu mândrie că am dobândit rapid abilități care m-au ajutat să obțin un venit stabil online."
+            </p>
+            
+          </li>
+          <li class="students__item">
+            <div class="member">
+              <div class="students__imgBox">
+                <img class="students__img" src="./images/students/student-2.jpg" alt="Andrei Marinescu" loading="lazy"
+                  width="72" height="72" />
+              </div>
+
+              <h3 class="title--color member__title">Andrei Marinescu</h3>
+              <p class="member__text">Full Stack Developer</p>
+            </div>
+            <p class="student__feedback">
+              "Participarea la Cursul de Dezvoltator Full Stack a fost o șansă extraordinară de a dobândi abilități esențiale în dezvoltarea web. Am avut posibilitatea să aplic teoria în practică, iar acum pot realiza proiecte care îmi aduc câștiguri rapide. Informațiile acumulate mi-au facilitat obținerea unui loc de muncă ce oferă venituri suplimentare."
+            </p>
+           
+          </li>
+         
+          <li class="students__item">
+            <div class="member">
+              <div class="students__imgBox">
+                <img class="students__img" src="./images/students/student-4.jpg" alt="Cristian Vasile" loading="lazy"
                   width="72" height="72" />
               </div>
 
               <h3 class="title--color member__title">Cristian Vasile</h3>
               <p class="member__text">Manual Tester</p>
             </div>
+            <p class="student__feedback">
+              Experiența mea la IT-courses a fost extrem de pozitivă. Am învățat cum să testez programele eficient și să contribui la îmbunătățirea produselor. Acest curs a reprezentat un excelent punct de plecare pentru o carieră de succes.
+            </p>
+           
           </li>
         </ul>
       </div>
@@ -268,7 +244,7 @@
               </a>
             </li>
             <li>
-              <a class="footer-social__link link" href="https://www.instagram.com/" target="_blank"
+              <a class="footer-social__link link" href="https://x.com/" target="_blank"
                 rel="noopener noreferrer" aria-label="Twitter">
                 <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>

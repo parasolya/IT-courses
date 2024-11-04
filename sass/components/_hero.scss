@@ -17,13 +17,14 @@
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 68px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
     max-width: 696px;
-    margin-top: 120px;
+    margin-top: 100px;
+    margin-bottom: 68px;
   }
 }
 
@@ -53,7 +54,7 @@
 .hero--overlay {
   max-width: 1600px;
   height: 400px;
-  padding: 100px 0;
+  padding: 100px 0 0;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -93,9 +94,7 @@
 }
 
 .hero__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -108,11 +107,15 @@
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &:hover,
   &:focus {
-    background-color: var(--accent-hover-color); 
+    background-color: var(--accent-hover-color);
   }
 }

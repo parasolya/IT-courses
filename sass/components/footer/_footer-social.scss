@@ -27,7 +27,7 @@
   transition: background-color var(--anim-fast);
 
   &:hover {
-    background-color: #2196f3;
+    background-color: var(--accent-color);
     color: var(--white-color);
   }
 }
