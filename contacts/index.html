@@ -1,73 +1,135 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Itcursuridevenit</title>
-    <link rel="icon" href="../images/icons/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header__box">
-        <a class="logo header__item" href="../">IT<span class="logo--black">Cours</span></a>
 
-        <nav class="nav header__item">
-          <ul class="list nav__list">
-            <li class="nav__item">
-              <a href="../" class="nav__link link">Acasă</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itcursuridevenit</title>
+  <link rel="icon" href="../images/icons/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/main.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__box">
+      <a class="logo header__item" href="../">IT<span class="logo--black">Cours</span></a>
+
+      <nav class="nav header__item">
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a href="../" class="nav__link link">Acasă</a>
+          </li>
+          <li class="nav__item">
+            <a href="../courses" class="nav__link link">Cursuri</a>
+          </li>
+          <li class="nav__item">
+            <a href="./" class="nav__link link nav__link--current">Contacte</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="../courses" class="hero__button contact__btn link">Alege un curs</a>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="../images/icons.svg#icon-open_mobmenu"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title title--color">Contactele Noastre</h1>
+        <div class="contactUs__wrapper">
+          <div class="contactUs__imgBox">
+            <img class="contactUs__img" src="../images/contactUs/contact.jpg" alt="Contacte" />
+          </div>
+          <ul class="contactUs__List header__item list">
+            <li class="contact__item">
+              <div class="contactUs__location">
+                <img width="32" src="../images/icons/location.svg" alt="icons Location" />
+
+                <p class="footerContact__link">strada Lânăriei 103, București 040324, România</p>
+              </div>
             </li>
-            <li class="nav__item">
-              <a href="../courses" class="nav__link link">Cursuri</a>
+            <li class="contact__item">
+              <div class="contactUs__location">
+                <img width="32" src="../images/icons/email.svg" alt="icons Location" />
+                <a href="mailto:contact@itcursuridevenit.com" class="contact__link footerContact__link link">
+                  contact@itcursuridevenit.com
+                </a>
+              </div>
             </li>
-            <li class="nav__item">
-              <a href="./" class="nav__link link nav__link--current">Contacte</a>
+            <li class="contact__item">
+              <div class="contactUs__location">
+                <img width="32" src="../images/icons/phone.svg" alt="icons Location" />
+                <a href="tel:+40712345678" class="contact__link footerContact__link link">
+                  +40 712 345 678</a>
+              </div>
             </li>
           </ul>
-        </nav>
-        <a href="../courses" class="hero__button contact__btn link">Alege un curs</a>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="menu-toggle__icon" width="40" height="40">
-            <use href="../images/icons.svg#icon-open_mobmenu"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="section">
-        <div class="container">
-          <h1 class="section__title title--color">Contactele Noastre</h1>
-          <div class="contactUs__wrapper">
-            <div class="contactUs__imgBox">
-              <img class="contactUs__img" src="../images/contactUs/contact.jpg" alt="Contacte" />
-            </div>
-            <ul class="contactUs__List header__item list">
+    </section>
+    <section class="section contacstPageForm">
+      <h1 class="section__title title--color">Lasă-ți datele, te vom contacta</h1>
+      <div class="formWrapper">
+        <form id="contactForm" class="form form--distance" name="form">
+          <label class="form__label" for="user-name">Nume</label>
+          <div class="form__wrapper">
+            <input class="form__field" type="text" name="user-name" id="user-name" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="../images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="form__label" for="user-phone">Telefon</label>
+          <div class="form__wrapper">
+            <input class="form__field" type="tel" name="user-phone" id="user-phone" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="../images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="form__label" for="user-mail">E-mail</label>
+          <div class="form__wrapper">
+            <input class="form__field" type="email" name="user-mai" id="user-mail" />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="../images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="form__label" for="user-massage">Comentariu</label>
+          <textarea class="form__massage" name="user-massage" id="user-massage" placeholder="Introduceți textul"
+            rows="6"></textarea>
+
+          <button class="form__button button" type="submit">Trimite</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__box">
+        <div class="footer__items">
+          <div class="footer__wrapper">
+            <a class="logo logo--bottom" href="../">IT<span class="logo--white">Cours</span></a>
+            <ul class="footer__List header__item list">
               <li class="contact__item">
                 <div class="contactUs__location">
                   <img width="32" src="../images/icons/location.svg" alt="icons Location" />
 
-                  <p class="footerContact__link">strada Lânăriei 103, București 040324, România</p>
+                  <p class="footerContact__link">
+                    strada Lânăriei 103, București 040324, România
+                  </p>
                 </div>
               </li>
               <li class="contact__item">
                 <div class="contactUs__location">
                   <img width="32" src="../images/icons/email.svg" alt="icons Location" />
-                  <a
-                    href="mailto:contact@itcursuridevenit.com"
-                    class="contact__link footerContact__link link"
-                  >
+                  <a href="mailto:contact@itcursuridevenit.com" class="contact__link footerContact__link link">
                     contact@itcursuridevenit.com
                   </a>
                 </div>
@@ -76,196 +138,88 @@
                 <div class="contactUs__location">
                   <img width="32" src="../images/icons/phone.svg" alt="icons Location" />
                   <a href="tel:+40712345678" class="contact__link footerContact__link link">
-                    +40 712 345 678</a
-                  >
+                    +40 712 345 678</a>
                 </div>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-      <section class="section contacstPageForm">
-        <h1 class="section__title title--color">Lasă-ți datele, te vom contacta</h1>
-        <div class="formWrapper">
-          <form id="contactForm" class="form form--distance" name="form">
-            <label class="form__label" for="user-name">Nume</label>
-            <div class="form__wrapper">
-              <input class="form__field" type="text" name="user-name" id="user-name" />
-              <svg class="form__icon" width="18px" height="18px">
-                <use href="../images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-            <label class="form__label" for="user-phone">Telefon</label>
-            <div class="form__wrapper">
-              <input class="form__field" type="tel" name="user-phone" id="user-phone" />
-              <svg class="form__icon" width="18px" height="18px">
-                <use href="../images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-            <label class="form__label" for="user-mail">E-mail</label>
-            <div class="form__wrapper">
-              <input class="form__field" type="email" name="user-mai" id="user-mail" />
-              <svg class="form__icon" width="18px" height="18px">
-                <use href="../images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-            <label class="form__label" for="user-massage">Comentariu</label>
-            <textarea
-              class="form__massage"
-              name="user-massage"
-              id="user-massage"
-              placeholder="Introduceți textul"
-              rows="6"
-            ></textarea>
-
-            <button class="form__button button" type="submit">Trimite</button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__box">
-          <div class="footer__items">
-            <div class="footer__wrapper">
-              <a class="logo logo--bottom" href="../">IT<span class="logo--white">Cours</span></a>
-              <ul class="footer__List header__item list">
-                <li class="contact__item">
-                  <div class="contactUs__location">
-                    <img width="32" src="../images/icons/location.svg" alt="icons Location" />
-
-                    <p class="footerContact__link">
-                      strada Lânăriei 103, București 040324, România
-                    </p>
-                  </div>
-                </li>
-                <li class="contact__item">
-                  <div class="contactUs__location">
-                    <img width="32" src="../images/icons/email.svg" alt="icons Location" />
-                    <a
-                      href="mailto:contact@itcursuridevenit.com"
-                      class="contact__link footerContact__link link"
-                    >
-                      contact@itcursuridevenit.com
-                    </a>
-                  </div>
-                </li>
-                <li class="contact__item">
-                  <div class="contactUs__location">
-                    <img width="32" src="../images/icons/phone.svg" alt="icons Location" />
-                    <a href="tel:+40712345678" class="contact__link footerContact__link link">
-                      +40 712 345 678</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__address">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.862745429599!2d26.10187918460366!3d44.41546215062896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fee14dc0c827%3A0x14ee025b9fb72f19!2sTurist%20Club!5e0!3m2!1suk!2sua!4v1730753658382!5m2!1suk!2sua"
-                width="280"
-                height="150"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+          <div class="footer__address">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.862745429599!2d26.10187918460366!3d44.41546215062896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fee14dc0c827%3A0x14ee025b9fb72f19!2sTurist%20Club!5e0!3m2!1suk!2sua!4v1730753658382!5m2!1suk!2sua"
+              width="280" height="150" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-      <div class="footer__links">
-        <div class="container">
-          <div class="footer__linksWrapper">
-            <div class="footer__linksBox">
-              <a href="../terms" class="footer__link link">Termeni și Condiții</a>
-              <a href="../policy" class="footer__link link">Politica de Confidențialitate</a>
-            </div>
-            <p class="footer__tm">© Magazinul online „itcursuridevenit.com™” 2024</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu-toggle__icon" width="40" height="40">
-          <use href="../images/icons.svg#icon-close_mobmenu"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu list">
-        <li><a href="../" class="mobile-menu__link link">Acasă</a></li>
-        <li><a href="../courses" class="mobile-menu__link link">Cursuri</a></li>
-        <li><a href="./" class="mobile-menu__link link nav__link--current">Contacte</a></li>
-      </ul>
-      <ul class="mobmenu-contact list">
-        <li>
-          <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+40712345678"
-            >+40 712 345 678
-          </a>
-        </li>
-        <li class="mobmenu-contact__item--distance">
-          <a class="mobmenu-contact__link link" href="mailto:contact@itcursuridevenit.com"
-            >contact@itcursuridevenit.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobmenu-social list">
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            Instagram
-          </a>
-        </li>
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            Twitter
-          </a>
-        </li>
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            Facebook
-          </a>
-        </li>
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
     </div>
+    <div class="footer__links">
+      <div class="container">
+        <div class="footer__linksWrapper">
+          <div class="footer__linksBox">
+            <a href="../terms" class="footer__link link">Termeni și Condiții</a>
+            <a href="../policy" class="footer__link link">Politica de Confidențialitate</a>
+          </div>
+          <p class="footer__tm">© Magazinul online „itcursuridevenit.com™” 2024</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script defer src="../js/mobile-menu.js"></script>
-    <script src="../js/form-scripts.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" width="40" height="40">
+        <use href="../images/icons.svg#icon-close_mobmenu"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu list">
+      <li><a href="../" class="mobile-menu__link link">Acasă</a></li>
+      <li><a href="../courses" class="mobile-menu__link link">Cursuri</a></li>
+      <li><a href="./" class="mobile-menu__link link nav__link--current">Contacte</a></li>
+    </ul>
+    <ul class="mobmenu-contact list">
+      <li>
+        <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+40712345678">+40 712 345 678
+        </a>
+      </li>
+      <li class="mobmenu-contact__item--distance">
+        <a class="mobmenu-contact__link link"
+          href="mailto:contact@itcursuridevenit.com">contact@itcursuridevenit.com</a>
+      </li>
+    </ul>
+
+    <ul class="mobmenu-social list">
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram">
+          Instagram
+        </a>
+      </li>
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Twitter">
+          Twitter
+        </a>
+      </li>
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook">
+          Facebook
+        </a>
+      </li>
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script defer src="../js/mobile-menu.js"></script>
+  <script src="../js/form-scripts.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

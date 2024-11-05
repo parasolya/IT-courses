@@ -1,424 +1,344 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Itcursuridevenit</title>
-    <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container header__box">
-        <a class="logo header__item" href="./">IT<span class="logo--black">Cours</span></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itcursuridevenit</title>
+  <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 
-        <nav class="nav header__item">
-          <ul class="list nav__list">
-            <li class="nav__item">
-              <a href="./" class="nav__link link nav__link--current">Acasă</a>
+<body>
+  <header class="header">
+    <div class="container header__box">
+      <a class="logo header__item" href="./">IT<span class="logo--black">Cours</span></a>
+
+      <nav class="nav header__item">
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a href="./" class="nav__link link nav__link--current">Acasă</a>
+          </li>
+          <li class="nav__item">
+            <a href="courses" class="nav__link link">Cursurile Noastre</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts" class="nav__link link">Contacte</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="courses" class="hero__button contact__btn link">Alege un curs</a>
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-open_mobmenu"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero hero--overlay">
+      <div class="container">
+        <h1 class="hero__title">Cursuri în IT: Construiește-ți viitorul profesional</h1>
+        <div class="successes__container">
+          <h2 class="visually-hidden">Succese</h2>
+          <ul class="list successes__list">
+            <li class="successes__item">
+              <p class="successes__digit">32+</p>
+              <p class="successes__description">Profesorii</p>
             </li>
-            <li class="nav__item">
-              <a href="courses" class="nav__link link">Cursurile Noastre</a>
+            <li class="successes__item">
+              <p class="successes__digit">450+</p>
+              <p class="successes__description">Studenților</p>
             </li>
-            <li class="nav__item">
-              <a href="contacts" class="nav__link link">Contacte</a>
+            <li class="successes__item">
+              <p class="successes__digit">12+</p>
+              <p class="successes__description">Cursurilor</p>
+            </li>
+            <li class="successes__item">
+              <p class="successes__digit">8+</p>
+              <p class="successes__description">Țărilor</p>
             </li>
           </ul>
-        </nav>
-        <a href="courses" class="hero__button contact__btn link">Alege un curs</a>
-
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="menu-toggle__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-open_mobmenu"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="hero hero--overlay">
-        <div class="container">
-          <h1 class="hero__title">Cursuri în IT: Construiește-ți viitorul profesional</h1>
-          <div class="successes__container">
-            <h2 class="visually-hidden">Succese</h2>
-            <ul class="list successes__list">
-              <li class="successes__item">
-                <p class="successes__digit">32+</p>
-                <p class="successes__description">Profesorii</p>
+    </section>
+
+    <section class="about section">
+      <div class="container">
+        <h1 class="visually-hidden">Despre Noi</h1>
+        <p class="about__description">
+          IT-ul nu este doar un set de abilități tehnice, ci și o oportunitate pentru independența
+          financiară. După ce veți stăpâni abilitățile IT, veți putea câștiga bani extra online,
+          asigurându-vă un viitor stabil pentru dumneavoastră și familia dumneavoastră.
+          Dezvoltați-vă alături de noi și descoperiți noi moduri de câștig!
+        </p>
+      </div>
+    </section>
+
+    <section class="feature section">
+      <div class="container">
+        <h2 class="section__title title--color">Avantajele noastre</h2>
+        <ul class="list feature__list">
+          <li class="feature__item">
+            <h3 class="feature__title title--color">Verificarea temelor</h3>
+            <p class="feature__text">
+              Verificarea temelor de casă de către mentori asigură calitatea învățării. Mentorii
+              îi învață pe studentți cum să câștige pe internet.
+            </p>
+          </li>
+          <li class="feature__item">
+            <h3 class="feature__title title--color">Direcții moderne și perspective</h3>
+            <p class="feature__text">
+              Oferim cursuri exclusiv de limbaje și tehnologii promițătoare, stăpânirea cărora va
+              accelera profitul.
+            </p>
+          </li>
+          <li class="feature__item">
+            <h3 class="feature__title title--color">Prelegeri la ore convenabile.</h3>
+            <p class="feature__text">
+              Învățarea la ore convenabile vă permite să faceți investiții cu profit în
+              dezvoltarea personală, fără a afecta alte activități.
+            </p>
+          </li>
+          <li class="feature__item">
+            <h3 class="feature__title title--color">Ședințe practice.</h3>
+            <p class="feature__text">
+              Practicile oferă experiență din lumea reală, permițând participanților să-și
+              dezvolte abilitățile de care au nevoie pentru cariera lor.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="courses section">
+      <div class="container">
+        <h2 class="section__title title--color">Cursuri populare</h2>
+        <ul class="list courses__list">
+          <li class="courses__item">
+            <div class="courses__imgBox">
+              <img class="courses__img" src="./images/courses/1cours.jpg" alt="Dezvoltator la computer" width="370"
+                height="294" loading="lazy" />
+              <p class="courses__label">Frontend apropiate</p>
+            </div>
+          </li>
+          <li class="courses__item">
+            <div class="courses__imgBox">
+              <img class="courses__img" src="./images/courses/2cours.jpg" alt="Dezvoltator la un dispozitiv mobil"
+                width="370" height="294" loading="lazy" />
+              <p class="courses__label">Python developer</p>
+            </div>
+          </li>
+          <li class="courses__item">
+            <div class="courses__imgBox">
+              <img class="courses__img" src="./images/courses/3cours.jpg" alt="Designer grafic" width="370" height="294"
+                loading="lazy" />
+              <p class="courses__label">Design UX/UI de bază</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="students section">
+      <div class="container">
+        <h2 class="section__title title--color">Ce spun studenții noștri</h2>
+        <ul class="list students__list">
+          <li class="students__item">
+            <div class="member">
+              <div class="students__imgBox">
+                <img class="students__img" src="./images/students/student-3.jpg" alt="Ana Dumitrescu" loading="lazy"
+                  width="72" height="72" />
+              </div>
+
+              <h3 class="title--color member__title">Ana Dumitrescu</h3>
+              <p class="member__text">Frontend Developer</p>
+            </div>
+            <p class="student__feedback">
+              "Foarte mulțumită că m-am înscris la cursuri. Acestea m-au ajutat să îmi
+              îmbunătățesc abilitățile tehnice și să devin un dezvoltator mai eficient. Datorită
+              acestor cunoștințe, am reușit să câștig bani suplimentari prin proiecte freelance.
+              În plus, am descoperit noi modalități de a genera venituri, care mi-au asigurat un
+              viitor financiar stabil."
+            </p>
+          </li>
+          <li class="students__item">
+            <div class="member">
+              <div class="students__imgBox">
+                <img class="students__img" src="./images/students/student-1.jpg" alt="Elena Marinescu" loading="lazy"
+                  width="72" height="72" />
+              </div>
+              <div class="member">
+                <h3 class="title--color member__title">Elena Marinescu</h3>
+                <p class="member__text">UX/UI Designer</p>
+              </div>
+            </div>
+            <p class="student__feedback">
+              "Studiiile la IT-courses au reprezentat o experiență care mi-a schimbat viața. Am
+              învățat nu doar conceptele de design, ci și cum să aplic aceste competențe în
+              proiecte reale. Acum pot afirma cu mândrie că am dobândit rapid abilități care m-au
+              ajutat să obțin un venit stabil online."
+            </p>
+          </li>
+          <li class="students__item">
+            <div class="member">
+              <div class="students__imgBox">
+                <img class="students__img" src="./images/students/student-2.jpg" alt="Mihai Ionescu" loading="lazy"
+                  width="72" height="72" />
+              </div>
+
+              <h3 class="title--color member__title">Mihai Ionescu</h3>
+              <p class="member__text">Full Stack Developer</p>
+            </div>
+            <p class="student__feedback">
+              "Participarea la Cursul de Dezvoltator Full Stack a fost o șansă extraordinară de a
+              dobândi abilități esențiale în dezvoltarea web. Am avut posibilitatea să aplic
+              teoria în practică, iar acum pot realiza proiecte care îmi aduc câștiguri rapide.
+              Informațiile acumulate mi-au facilitat obținerea unui loc de muncă ce oferă venituri
+              suplimentare."
+            </p>
+          </li>
+
+          <li class="students__item">
+            <div class="member">
+              <div class="students__imgBox">
+                <img class="students__img" src="./images/students/student-4.jpg" alt="Alexandru Popescu" loading="lazy"
+                  width="72" height="72" />
+              </div>
+
+              <h3 class="title--color member__title">Alexandru Popescu</h3>
+              <p class="member__text">Manual Tester</p>
+            </div>
+            <p class="student__feedback">
+              Experiența mea la IT-courses a fost extrem de pozitivă. Am învățat cum să testez
+              programele eficient și să contribui la îmbunătățirea produselor. Acest curs a
+              reprezentat un excelent punct de plecare pentru o carieră de succes.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__box">
+        <div class="footer__items">
+          <div class="footer__wrapper">
+            <a class="logo logo--bottom" href="./">IT<span class="logo--white">Cours</span></a>
+            <ul class="footer__List header__item list">
+              <li class="contact__item">
+                <div class="contactUs__location">
+                  <img width="32" src="./images/icons/location.svg" alt="icons Location" />
+
+                  <p class="footerContact__link">
+                    strada Lânăriei 103, București 040324, România
+                  </p>
+                </div>
               </li>
-              <li class="successes__item">
-                <p class="successes__digit">450+</p>
-                <p class="successes__description">Studenților</p>
+              <li class="contact__item">
+                <div class="contactUs__location">
+                  <img width="32" src="./images/icons/email.svg" alt="icons Location" />
+                  <a href="mailto:contact@itcursuridevenit.com" class="contact__link footerContact__link link">
+                    contact@itcursuridevenit.com
+                  </a>
+                </div>
               </li>
-              <li class="successes__item">
-                <p class="successes__digit">12+</p>
-                <p class="successes__description">Cursurilor</p>
-              </li>
-              <li class="successes__item">
-                <p class="successes__digit">8+</p>
-                <p class="successes__description">Țărilor</p>
+              <li class="contact__item">
+                <div class="contactUs__location">
+                  <img width="32" src="./images/icons/phone.svg" alt="icons Location" />
+                  <a href="tel:+40712345678" class="contact__link footerContact__link link">
+                    +40 712 345 678</a>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section class="about section">
-        <div class="container">
-          <h1 class="visually-hidden">Despre Noi</h1>
-          <p class="about__description">
-            IT-ul nu este doar un set de abilități tehnice, ci și o oportunitate pentru independența
-            financiară. După ce veți stăpâni abilitățile IT, veți putea câștiga bani extra online,
-            asigurându-vă un viitor stabil pentru dumneavoastră și familia dumneavoastră.
-            Dezvoltați-vă alături de noi și descoperiți noi moduri de câștig!
-          </p>
-        </div>
-      </section>
-
-      <section class="feature section">
-        <div class="container">
-          <h2 class="section__title title--color">Avantajele noastre</h2>
-          <ul class="list feature__list">
-            <li class="feature__item">
-              <h3 class="feature__title title--color">Verificarea temelor</h3>
-              <p class="feature__text">
-                Verificarea temelor de casă de către mentori asigură calitatea învățării. Mentorii
-                îi învață pe studentți cum să câștige pe internet.
-              </p>
-            </li>
-            <li class="feature__item">
-              <h3 class="feature__title title--color">Direcții moderne și perspective</h3>
-              <p class="feature__text">
-                Oferim cursuri exclusiv de limbaje și tehnologii promițătoare, stăpânirea cărora va
-                accelera profitul.
-              </p>
-            </li>
-            <li class="feature__item">
-              <h3 class="feature__title title--color">Prelegeri la ore convenabile.</h3>
-              <p class="feature__text">
-                Învățarea la ore convenabile vă permite să faceți investiții cu profit în
-                dezvoltarea personală, fără a afecta alte activități.
-              </p>
-            </li>
-            <li class="feature__item">
-              <h3 class="feature__title title--color">Ședințe practice.</h3>
-              <p class="feature__text">
-                Practicile oferă experiență din lumea reală, permițând participanților să-și
-                dezvolte abilitățile de care au nevoie pentru cariera lor.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="courses section">
-        <div class="container">
-          <h2 class="section__title title--color">Cursuri populare</h2>
-          <ul class="list courses__list">
-            <li class="courses__item">
-              <div class="courses__imgBox">
-                <img
-                  class="courses__img"
-                  src="./images/courses/1cours.jpg"
-                  alt="Dezvoltator la computer"
-                  width="370"
-                  height="294"
-                  loading="lazy"
-                />
-                <p class="courses__label">Frontend apropiate</p>
-              </div>
-            </li>
-            <li class="courses__item">
-              <div class="courses__imgBox">
-                <img
-                  class="courses__img"
-                  src="./images/courses/2cours.jpg"
-                  alt="Dezvoltator la un dispozitiv mobil"
-                  width="370"
-                  height="294"
-                  loading="lazy"
-                />
-                <p class="courses__label">Python developer</p>
-              </div>
-            </li>
-            <li class="courses__item">
-              <div class="courses__imgBox">
-                <img
-                  class="courses__img"
-                  src="./images/courses/3cours.jpg"
-                  alt="Designer grafic"
-                  width="370"
-                  height="294"
-                  loading="lazy"
-                />
-                <p class="courses__label">Design UX/UI de bază</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="students section">
-        <div class="container">
-          <h2 class="section__title title--color">Ce spun studenții noștri</h2>
-          <ul class="list students__list">
-            <li class="students__item">
-              <div class="member">
-                <div class="students__imgBox">
-                  <img
-                    class="students__img"
-                    src="./images/students/student-3.jpg"
-                    alt="Ana Dumitrescu"
-                    loading="lazy"
-                    width="72"
-                    height="72"
-                  />
-                </div>
-
-                <h3 class="title--color member__title">Ana Dumitrescu</h3>
-                <p class="member__text">Frontend Developer</p>
-              </div>
-              <p class="student__feedback">
-                "Foarte mulțumită că m-am înscris la cursuri. Acestea m-au ajutat să îmi
-                îmbunătățesc abilitățile tehnice și să devin un dezvoltator mai eficient. Datorită
-                acestor cunoștințe, am reușit să câștig bani suplimentari prin proiecte freelance.
-                În plus, am descoperit noi modalități de a genera venituri, care mi-au asigurat un
-                viitor financiar stabil."
-              </p>
-            </li>
-            <li class="students__item">
-              <div class="member">
-                <div class="students__imgBox">
-                  <img
-                    class="students__img"
-                    src="./images/students/student-1.jpg"
-                    alt="Elena Marinescu"
-                    loading="lazy"
-                    width="72"
-                    height="72"
-                  />
-                </div>
-                <div class="member">
-                  <h3 class="title--color member__title">Elena Marinescu</h3>
-                  <p class="member__text">UX/UI Designer</p>
-                </div>
-              </div>
-              <p class="student__feedback">
-                "Studiiile la IT-courses au reprezentat o experiență care mi-a schimbat viața. Am
-                învățat nu doar conceptele de design, ci și cum să aplic aceste competențe în
-                proiecte reale. Acum pot afirma cu mândrie că am dobândit rapid abilități care m-au
-                ajutat să obțin un venit stabil online."
-              </p>
-            </li>
-            <li class="students__item">
-              <div class="member">
-                <div class="students__imgBox">
-                  <img
-                    class="students__img"
-                    src="./images/students/student-2.jpg"
-                    alt="Mihai Ionescu"
-                    loading="lazy"
-                    width="72"
-                    height="72"
-                  />
-                </div>
-
-                <h3 class="title--color member__title">Mihai Ionescu</h3>
-                <p class="member__text">Full Stack Developer</p>
-              </div>
-              <p class="student__feedback">
-                "Participarea la Cursul de Dezvoltator Full Stack a fost o șansă extraordinară de a
-                dobândi abilități esențiale în dezvoltarea web. Am avut posibilitatea să aplic
-                teoria în practică, iar acum pot realiza proiecte care îmi aduc câștiguri rapide.
-                Informațiile acumulate mi-au facilitat obținerea unui loc de muncă ce oferă venituri
-                suplimentare."
-              </p>
-            </li>
-
-            <li class="students__item">
-              <div class="member">
-                <div class="students__imgBox">
-                  <img
-                    class="students__img"
-                    src="./images/students/student-4.jpg"
-                    alt="Alexandru Popescu"
-                    loading="lazy"
-                    width="72"
-                    height="72"
-                  />
-                </div>
-
-                <h3 class="title--color member__title">Alexandru Popescu</h3>
-                <p class="member__text">Manual Tester</p>
-              </div>
-              <p class="student__feedback">
-                Experiența mea la IT-courses a fost extrem de pozitivă. Am învățat cum să testez
-                programele eficient și să contribui la îmbunătățirea produselor. Acest curs a
-                reprezentat un excelent punct de plecare pentru o carieră de succes.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__box">
-          <div class="footer__items">
-            <div class="footer__wrapper">
-              <a class="logo logo--bottom" href="./">IT<span class="logo--white">Cours</span></a>
-              <ul class="footer__List header__item list">
-                <li class="contact__item">
-                  <div class="contactUs__location">
-                    <img width="32" src="./images/icons/location.svg" alt="icons Location" />
-
-                    <p class="footerContact__link">
-                      strada Lânăriei 103, București 040324, România
-                    </p>
-                  </div>
-                </li>
-                <li class="contact__item">
-                  <div class="contactUs__location">
-                    <img width="32" src="./images/icons/email.svg" alt="icons Location" />
-                    <a
-                      href="mailto:contact@itcursuridevenit.com"
-                      class="contact__link footerContact__link link"
-                    >
-                      contact@itcursuridevenit.com
-                    </a>
-                  </div>
-                </li>
-                <li class="contact__item">
-                  <div class="contactUs__location">
-                    <img width="32" src="./images/icons/phone.svg" alt="icons Location" />
-                    <a href="tel:+40712345678" class="contact__link footerContact__link link">
-                      +40 712 345 678</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__address">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.862745429599!2d26.10187918460366!3d44.41546215062896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fee14dc0c827%3A0x14ee025b9fb72f19!2sTurist%20Club!5e0!3m2!1suk!2sua!4v1730753658382!5m2!1suk!2sua"
-                width="280"
-                height="150"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+          <div class="footer__address">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.862745429599!2d26.10187918460366!3d44.41546215062896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fee14dc0c827%3A0x14ee025b9fb72f19!2sTurist%20Club!5e0!3m2!1suk!2sua!4v1730753658382!5m2!1suk!2sua"
+              width="280" height="150" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-      <div class="footer__links">
-        <div class="container">
-          <div class="footer__linksWrapper">
-            <div class="footer__linksBox">
-              <a href="terms" class="footer__link link">Termeni și Condiții</a>
-              <a href="policy" class="footer__link link">Politica de Confidențialitate</a>
-            </div>
-            <p class="footer__tm">© Magazinul online „itcursuridevenit.com™” 2024</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu-toggle__icon" width="40" height="40">
-          <use href="./images/icons.svg#icon-close_mobmenu"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu list">
-        <li><a href="./" class="mobile-menu__link link nav__link--current">Acasă</a></li>
-        <li><a href="courses" class="mobile-menu__link link">Cursurile Noastre</a></li>
-        <li><a href="contacts" class="mobile-menu__link link">Contacte</a></li>
-      </ul>
-      <ul class="mobmenu-contact list">
-        <li>
-          <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+40712345678"
-            >+40 712 345 678
-          </a>
-        </li>
-        <li class="mobmenu-contact__item--distance">
-          <a class="mobmenu-contact__link link" href="mailto:contact@itcursuridevenit.com"
-            >contact@itcursuridevenit.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobmenu-social list">
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            Instagram
-          </a>
-        </li>
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            Twitter
-          </a>
-        </li>
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            Facebook
-          </a>
-        </li>
-        <li class="mobmenu-social__item">
-          <a
-            class="mobmenu-social__link link"
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
     </div>
+    <div class="footer__links">
+      <div class="container">
+        <div class="footer__linksWrapper">
+          <div class="footer__linksBox">
+            <a href="terms" class="footer__link link">Termeni și Condiții</a>
+            <a href="policy" class="footer__link link">Politica de Confidențialitate</a>
+          </div>
+          <p class="footer__tm">© Magazinul online „itcursuridevenit.com™” 2024</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script defer src="./js/mobile-menu.js"></script>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-close_mobmenu"></use>
+      </svg>
+    </button>
 
-    <script src="./js/modal.js"></script>
+    <ul class="mobile-menu list">
+      <li><a href="./" class="mobile-menu__link link nav__link--current">Acasă</a></li>
+      <li><a href="courses" class="mobile-menu__link link">Cursurile Noastre</a></li>
+      <li><a href="contacts" class="mobile-menu__link link">Contacte</a></li>
+    </ul>
+    <ul class="mobmenu-contact list">
+      <li>
+        <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+40712345678">+40 712 345 678
+        </a>
+      </li>
+      <li class="mobmenu-contact__item--distance">
+        <a class="mobmenu-contact__link link"
+          href="mailto:contact@itcursuridevenit.com">contact@itcursuridevenit.com</a>
+      </li>
+    </ul>
 
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <ul class="mobmenu-social list">
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram">
+          Instagram
+        </a>
+      </li>
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Twitter">
+          Twitter
+        </a>
+      </li>
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook">
+          Facebook
+        </a>
+      </li>
+      <li class="mobmenu-social__item">
+        <a class="mobmenu-social__link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script defer src="./js/mobile-menu.js"></script>
+
+  <script src="./js/modal.js"></script>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

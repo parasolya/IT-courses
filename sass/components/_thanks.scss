@@ -8,7 +8,7 @@
 
 .thanks__title {
   color: var(--white-color);
-  
+
 
   font-weight: 900;
   font-size: 26px;
@@ -19,7 +19,7 @@
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
- 
+
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
@@ -60,60 +60,48 @@
   background-position: center;
   background-size: cover;
 
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
-    ),
+      rgba(47, 48, 58, 0.6)),
     url(../images/thanks/img_s.jpg);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.6),
-        rgba(47, 48, 58, 0.6)
-      ),
+        rgba(47, 48, 58, 0.6)),
       url(../images/thanks/img_s@2x.jpg);
   }
 
   @media screen and (min-width: 481px) {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.6),
-        rgba(47, 48, 58, 0.6)
-      ),
+        rgba(47, 48, 58, 0.6)),
       url(../images/thanks/img_m.jpg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.6),
-          rgba(47, 48, 58, 0.6)
-        ),
+          rgba(47, 48, 58, 0.6)),
         url(../images/thanks/img_m@2x.jpg);
     }
   }
 
   @media screen and (min-width: 769px) {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.6),
-        rgba(47, 48, 58, 0.6)
-      ),
+        rgba(47, 48, 58, 0.6)),
       url(../images/thanks/img_l.jpg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.6),
-          rgba(47, 48, 58, 0.6)
-        ),
+          rgba(47, 48, 58, 0.6)),
         url(../images/thanks/img_l@2x.jpg);
     }
   }
@@ -158,4 +146,3 @@
   justify-content: space-between;
   gap: 20px;
 }
-

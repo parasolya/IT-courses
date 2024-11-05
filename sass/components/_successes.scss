@@ -6,11 +6,11 @@
   }
 }
 
-.successes__list { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px; 
+.successes__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
 }
 
 .successes__item {
@@ -19,11 +19,12 @@
   padding: 20px;
   width: 120px;
   height: 120px;
- border-radius: 50%; 
- @media screen and (min-width: 1200px) {  
-  width: 140px;
-  height: 140px;
-}
+  border-radius: 50%;
+
+  @media screen and (min-width: 1200px) {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .successes__digit {
