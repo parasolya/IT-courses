@@ -7,7 +7,6 @@
 }
 
 .coursesPage__item {
-  
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -23,12 +22,10 @@
   }
 }
 
-
-
 .card {
   padding: 20px 24px;
   border: 2px solid var(--coursesPage-border-color);
-  border-top: none;  
+  border-top: none;
 
   display: flex;
   flex-direction: column;
@@ -91,5 +88,4 @@
   @media screen and (min-width: 1200px) {
     font-size: 18px;
   }
-
 }

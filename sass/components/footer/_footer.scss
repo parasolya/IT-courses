@@ -38,7 +38,7 @@
   color: var(--white-color);
 }
 
-.footer__items {  
+.footer__items {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -48,17 +48,15 @@
 
 @media screen and (min-width: 768px) {
   .footer__items {
-    // width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .footer__items {
     width: 100%;
-   align-items: start;
+    align-items: start;
   }
 }
 
@@ -191,20 +189,23 @@
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     gap: 150px;
-  
   }
 }
 
 .footerContact__link {
-  
-    color: var(--accent-color);
-    font-weight: 500;
-    font-size: 18px;
-  
-    &:hover,
-    &:focus {
-      color: var(--accent-hover-color); 
-    }
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: start;
+  &:hover,
+  &:focus {
+    color: var(--accent-hover-color);
+  }
+}
 
-  
+.contactUs__location {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
