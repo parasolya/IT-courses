@@ -842,7 +842,6 @@ address {
 
 @media screen and (min-width: 768px) {
   .footer__wrapper {
-    gap: 50px;
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
