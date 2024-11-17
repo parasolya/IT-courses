@@ -1,2 +1,4 @@
 User-agent: *
-Sitemap: https://itcursuridevenit.com/sitemap.xml
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: itcursuridevenit.com

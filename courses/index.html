@@ -27,7 +27,7 @@
             <a href="../" class="nav__link link">Acasă</a>
           </li>
           <li class="nav__item">
-            <a href="./" class="nav__link link nav__link--current">Cursuri</a>
+            <a href="./" class="nav__link link nav__link--current">Cursurile Noastre</a>
           </li>
           <li class="nav__item">
             <a href="../contacts" class="nav__link link">Contacte</a>
@@ -232,20 +232,13 @@
               <li class="contact__item">
                 <div class="contactUs__location">
                   <img width="32" src="../images/icons/phone.svg" alt="icons Location" />
-                  <a href="tel:+40712345678" class="contact__link footerContact__link link">
-                    +40 712 345 678</a>
+                  <a href="tel:+40732642253" class="contact__link footerContact__link link">
+                    +40 732 642 253</a>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="footer__address">
-
-            <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.862745429599!2d26.10187918460366!3d44.41546215062896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fee14dc0c827%3A0x14ee025b9fb72f19!2sTurist%20Club!5e0!3m2!1sro!2sro!4v1730753658382!5m2!1sro!2sro"
-    width="280" height="150" style="border: 0" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -262,6 +255,73 @@
     </div>
   </footer>
 
+  <div id="cookieBar">
+    <p>Acest site colectează date pentru a vă îmbunătăți experiența. Prin utilizarea acestui site, sunteți de acord cu utilizarea cookie-urilor.</p>
+    <button id="cookieBarBtn">OK</button>
+  </div>
+
+  <style>
+    #cookieBar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border-top: 2px solid #f39c12;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    #cookieBar.hidden {
+      transform: translateY(100%);
+    }
+
+    #cookieBar p {
+      color: #333;
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+
+    #cookieBar button {
+      background-color: #f39c12;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    #cookieBar button:hover {
+      background-color: #d35400;
+    }
+
+    @media (max-width: 768px) {
+      #cookieBar p {
+        font-size: 14px;
+      }
+
+      #cookieBar button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <script>
+    document.getElementById('cookieBarBtn').addEventListener('click', function() {
+      document.getElementById('cookieBar').classList.add('hidden');
+    });
+  </script>
+
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
       <svg class="menu-toggle__icon" width="40" height="40">
@@ -270,12 +330,12 @@
     </button>
     <ul class="mobile-menu list">
       <li><a href="../" class="mobile-menu__link link">Acasă</a></li>
-      <li><a href="./" class="mobile-menu__link link  nav__link--current">Cursuri</a></li>
+      <li><a href="./" class="mobile-menu__link link  nav__link--current">Cursurile Noastre</a></li>
       <li><a href="../contacts/" class="mobile-menu__link link">Contacte</a></li>
     </ul>
     <ul class="mobmenu-contact list">
       <li>
-        <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+40712345678">+40 712 345 678
+        <a class="mobmenu-contact__link mobmenu-contact__link--size link" href="tel:+40732642253">+40 732 642 253
         </a>
       </li>
       <li class="mobmenu-contact__item--distance">
@@ -314,9 +374,7 @@
 
   <script defer src="../js/mobile-menu.js"></script>
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
